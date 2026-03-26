@@ -1,0 +1,275 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(180deg, #f4f6fb, #eef2f7, #e9eff6, #f5f7fb);
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  img{
+    height: 15%;
+    width: 15%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1f2d3d;
+}
+
+
+.bouton {
+  background: #4caf7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(76, 175, 122, 0.3);
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.bouton1 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid  #2f6fed;
+  color:  #2f6fed;
+  background: transparent;
+}
+.mere {
+  background-image: url(./WhatsApp\ Image\ 2026-03-15\ at\ 23.24.05.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.fils1  {
+    h1{
+  font-size: 40px;
+  color: #1f2d3d;
+  margin-bottom: 100px !important;
+  padding: 40px;
+  align-items: center;
+  margin-left: 185px;
+}
+.bouton{
+ margin-top: 300px ;
+  margin-left: 500px;
+  padding: 9px;
+  font-size: 20px;
+  cursor: pointer;
+}
+}
+.mere1 {
+  text-align: center;
+  padding: 50px 20px;
+}
+.mere2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.fils2 {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.fils2:hover {
+  transform: translateY(-5px);
+}
+.mere3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-image: url(./WhatsApp\ Image\ 2026-03-17\ at\ 20.39.52.jpeg);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.fils3{
+  position: relative;
+  h2{
+    font-size: 50px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 100px;
+  }
+  p{
+    font-size: 19px;
+  }
+}
+.mere4 {
+  text-align: center;
+  padding: 50px;
+}
+footer{
+  background-color: #2F80ED;
+  color: white;
+  padding: 40px 20px;
+}
+.mere5{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fils5{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  a{
+    color: white;
+  text-decoration: none;
+  }
+}
+.fils6{
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.fils7{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-size: 20px;
+}
+  .fils:active{
+    color: #56ccf2;
+  }
+  .fils{
+    color: #2F80ED;
+    font-size: 20px;
+  }
+ .fils2 h3.sousfils{
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* TABLETTE */
+@media (max-width: 1028px) {
+  header {
+    padding: 20px;
+  }
+
+  .mere {
+    background-image: url(./WhatsApp\ Image\ 2026-03-15\ at\ 23.24.05.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .fils1 h1 {
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  .fils1 .bouton {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .mere2 {
+    flex-wrap: wrap;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .mere {
+    padding: 30px 15px;
+    height: 250px;
+    background-image: url(./WhatsApp\ Image\ 2026-03-15\ at\ 23.24.05.jpeg);
+    background-size: cover;
+  }
+
+
+  .fils1 h1 {
+    font-size: 24px;
+    margin-bottom: 20px !important;
+  }
+
+  .bouton {
+    padding: 10px;
+    font-size: 16px;
+   margin-top: -10px;
+  }
+
+  .mere2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fils2 {
+    width: 90%;
+  }
+
+  .mere3 {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .mere5 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mere3 {
+  padding: 30px 15px;
+  height: 250px;
+  background-image: url(./WhatsApp\ Image\ 2026-03-17\ at\ 20.39.52.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mere4 h2{
+  position: relative;
+  bottom: 30px;
+}
+header img{
+  width: 55%;
+}
+}
+

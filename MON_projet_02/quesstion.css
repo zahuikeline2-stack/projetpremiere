@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  img{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1f2d3d;
+}
+
+
+.bouton {
+  background: #4caf7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(76, 175, 122, 0.3);
+  a{
+  text-decoration: none;
+  color: white;
+  }
+}
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F9FF;
+}
+
+.pose-question {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  h2{
+    text-align: center;
+  }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px; 
+    border: none;
+}
+.envoier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    input{
+        padding: 15px;
+        width: 150px;
+    }  
+}
+footer{
+  background-color: #2F80ED;
+  color: white;
+  padding: 40px 20px;
+}
+.mere5{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fils5{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  a{
+    color: white;
+  text-decoration: none;
+  }
+}
+.fils6{
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.fils7{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-size: 20px;
+}
+  .fils:active{
+    color: #56ccf2;
+  }
+  .fils{
+    color: #2F80ED;
+    font-size: 20px;
+  }
+ .fils2 h3.sousfils{
+    width: 200px;
+    height: 200px;
+  }
+  /*tablaeu*/
+  
+@media (max-width: 1028px) {
+  header {
+    padding: 20px;
+  }
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+  
+  
