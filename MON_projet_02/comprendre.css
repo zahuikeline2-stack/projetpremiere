@@ -9,6 +9,7 @@ header {
   padding: 20px 50px;
   background: white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 100%;
   img{
     height: 80px;
     width: 80px;
@@ -16,7 +17,18 @@ header {
     object-fit: cover;
   }
 }
-
+.bouton {
+  background: #4caf7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(76, 175, 122, 0.3);
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -290,9 +302,6 @@ color: #E6F2FF;
   padding: 40px 20px;
 }
 
-/* ============================================================
-   TABLETTE (max-width: 1028px)
-   ============================================================ */
 @media (max-width: 1028px) {
   header {
     flex-direction: column;
@@ -302,13 +311,13 @@ color: #E6F2FF;
   }
 
   header img {
-    width: 150px; /* Taille ajustée pour tablette */
+    width: 150px;
     height: auto;
   }
 
   nav a {
     margin: 5px 10px;
-    display: inline-block; /* Meilleur espacement tactile */
+    display: inline-block; 
   }
 
   .mere {
@@ -319,9 +328,9 @@ color: #E6F2FF;
     justify-content: center;
   }
 
-  /* Correction des noms de classes pour correspondre à ton HTML précédent */
+  
   .fils1 h1 {
-    font-size: 45px; /* Réduit un peu par rapport à 60px pour éviter les débordements */
+    font-size: 45px; 
     margin-left: 0 !important;
     text-align: center;
   }
@@ -331,7 +340,6 @@ color: #E6F2FF;
     margin-top: 30px !important;
   }
 
-  /* Cartes et sections */
   .mere1, .mere2, .mere5 {
     flex-wrap: wrap;
     justify-content: center;
@@ -339,30 +347,29 @@ color: #E6F2FF;
   }
 
   .fils2, .fille2, .garcon2 {
-    width: 45%; /* Deux cartes par ligne sur tablette */
+    width: 45%; 
   }
 }
-/* ============================================================
-   TABLETTE (max-width: 1024px)
-   ============================================================ */
+
+  
 @media (max-width: 1024px) {
-  /* Header */
+ 
   header {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
   }
 
-  /* Section Titre principal */
+ 
   .fils h1 {
     font-size: 50px;
   }
   
   .fils p {
-    margin: 0 auto; /* Centre le texte */
+    margin: 0 auto;
   }
 
-  /* Suppression des marges forcées à gauche pour les listes et blocs */
+  
   .fille1 p, .garcon1 p {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -374,27 +381,25 @@ color: #E6F2FF;
     margin-right: auto !important;
   }
 
-  /* Cartes */
+  
   .mere1, .mere2 {
     flex-wrap: wrap;
     gap: 10px;
   }
 
   .fille2, .garcon2 {
-    width: 40%; /* 2 cartes par ligne */
+    width: 40%; 
   }
 }
-
-/* ============================================================
    MOBILE (max-width: 768px)
-   ============================================================ */
+
 @media (max-width: 768px) {
-  /* Reset global pour mobile */
+  
   body {
-    overflow-x: hidden; /* Empêche le scroll horizontal */
+    overflow-x: hidden; 
   }
 
-  /* Header & Nav */
+  
   header img {
     width: 60px;
     height: 60px;
@@ -412,7 +417,7 @@ color: #E6F2FF;
     font-size: 14px;
   }
 
-  /* Section Bannière */
+  
   .mere {
     height: auto;
     padding-bottom: 40px;
@@ -431,28 +436,27 @@ color: #E6F2FF;
     max-width: 100%;
   }
 
-  /* Listes de changements (fille1 et garcon1) */
+
   .fille1 p, .garcon1 p {
     width: 90% !important;
-    margin: 10px auto !important; /* SUPPRIME le margin-left: 400px */
+    margin: 10px auto !important; 
     text-align: center;
   }
 
-  /* Grille des étapes de vie */
+ 
   .mere1, .mere2 {
     flex-direction: column;
     align-items: center;
   }
 
   .fille2, .garcon2 {
-    width: 90%; /* Une carte par ligne */
+    width: 90%; 
     margin: 15px 0;
   }
 
-  /* Blocs de texte descriptifs (fille3 et garcon3) */
   .fille3, .garcon3 {
     width: 90% !important;
-    margin: 20px auto !important; /* SUPPRIME le margin-left: 250px */
+    margin: 20px auto !important; 
     padding: 20px;
     text-align: center;
   }
@@ -477,7 +481,7 @@ color: #E6F2FF;
   }
 }
 
-/* Ajustement pour très petits écrans (iPhone SE, etc.) */
+
 @media (max-width: 400px) {
     .fils h1 {
         font-size: 28px;
