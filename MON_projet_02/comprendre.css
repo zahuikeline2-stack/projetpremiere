@@ -391,7 +391,7 @@ color: #E6F2FF;
     width: 40%; 
   }
 }
-   MOBILE (max-width: 768px)
+  
 
 @media (max-width: 768px) {
   
@@ -479,7 +479,8 @@ color: #E6F2FF;
   .fils7 {
     font-size: 16px;
   }
-}
+ }
+ 
 
 
 @media (max-width: 400px) {
@@ -492,15 +493,14 @@ color: #E6F2FF;
     }
 }
 @media (max-width: 768px) {
-  /* On réinitialise TOUS les éléments qui ont des marges ou largeurs fixes */
   .fils, .fils1, .fille1 p, .garcon1 p, .fille3, .garcon3, .fille2, .garcon2 {
-    margin-left: 0 !important;   /* Annule le décalage de 400px/250px */
+    margin-left: 0 !important;   
     margin-right: 0 !important;
-    width: 90% !important;       /* Utilise des % au lieu de px */
-    max-width: 90vw !important;  /* Sécurité supplémentaire */
-    margin: 10px auto !important; /* Centre l'élément automatiquement */
-    float: none;                 /* Au cas où tu aurais des floats */
-    position: static;            /* Annule les positions absolute qui font bouger */
+    width: 90% !important;       
+    max-width: 90vw !important; 
+    margin: 10px auto !important; 
+    float: none;                 
+    position: static;            
   }
 
   /* Ajustement pour que les conteneurs parents ne poussent pas les bords */
@@ -510,16 +510,4 @@ color: #E6F2FF;
     padding-left: 10px;
     padding-right: 10px;
   }
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Crucial : empêche le padding de faire dépasser l'élément */
-}
-
-html, body {
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden; /* Bloque le scroll vers la droite */
-  position: relative;
-}
 }
