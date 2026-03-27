@@ -274,3 +274,128 @@ header img{
 }
 }
 
+/* --- AJUSTEMENTS GÉNÉRAUX --- */
+.fils2 {
+    transition: transform 0.3s ease;
+}
+
+/* --- TABLETTE (max 1024px) --- */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .mere {
+        padding: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fils1 h1 {
+        margin-left: 0 !important; /* On annule le décalage */
+        font-size: 32px;
+    }
+
+    .fils1 .bouton {
+        margin-left: 0 !important;
+        margin-top: 50px;
+    }
+
+    .mere2 {
+        flex-wrap: wrap; /* Les cartes passent à la ligne si besoin */
+    }
+}
+
+/* --- MOBILE (max 768px) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header img {
+        width: 120px; /* Taille du logo plus raisonnable */
+        margin-bottom: 15px;
+    }
+
+    nav {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+    /* Section Héro (Accueil) */
+    .mere {
+        height: 60vh; /* Réduit la hauteur sur mobile */
+        padding: 20px;
+        background-position: center;
+        background-image: url(/MON_projet_02/souce_image/ACEUIL1.jpeg);
+    }
+
+    .fils1 h1 {
+        font-size: 24px;
+        margin-bottom: 20px !important;
+        padding: 0;
+    }
+
+    .fils1 .bouton {
+        margin-top: 20px !important;
+        font-size: 18px;
+    }
+
+    /* Cartes de rubriques */
+    .mere2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fils2 {
+        width: 90%; /* Les cartes prennent presque toute la largeur */
+        margin-bottom: 15px;
+    }
+
+    /* Section Image du milieu */
+    .mere3 {
+        height: 300px;
+        background-position: center;
+        background-image: url(/MON_projet_02/souce_image/Acceuil.jpeg)
+    }
+
+    .fils3 h2 {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        position: static; /* On remet dans le flux normal */
+    }
+
+    /* Footer */
+    .mere5 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .fils6 {
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* --- PETIT MOBILE (max 480px) --- */
+@media (max-width: 480px) {
+    .fils1 h1 {
+        font-size: 20px;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Menu sur 2 colonnes */
+        gap: 10px;
+    }
+}

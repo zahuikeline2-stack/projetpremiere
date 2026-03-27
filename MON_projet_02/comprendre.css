@@ -289,139 +289,201 @@ color: #E6F2FF;
   color: white;
   padding: 40px 20px;
 }
-/* 
-TABLETTE  */
+
+/* ============================================================
+   TABLETTE (max-width: 1028px)
+   ============================================================ */
 @media (max-width: 1028px) {
-  /* Header */
   header {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 20px;
     gap: 15px;
+    text-align: center;
   }
+
   header img {
-    width: 120px;
+    width: 150px; /* Taille ajustée pour tablette */
     height: auto;
   }
+
   nav a {
     margin: 5px 10px;
+    display: inline-block; /* Meilleur espacement tactile */
   }
 
-  /* Section mere */
   .mere {
-    height: 450px;
-  }
-  .fils {
-    padding: 50px;
-  }
-  .fils h1 {
-    font-size: 60px;
-  }
-  .fils p {
-    max-width: 400px;
-    font-size: 14px;
-  }
-  .fils button {
-    padding: 8px 18px;
+    height: auto;
+    min-height: 450px;
+    padding: 40px 20px;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  /* Cartes filles/garçons */
+  /* Correction des noms de classes pour correspondre à ton HTML précédent */
+  .fils1 h1 {
+    font-size: 45px; /* Réduit un peu par rapport à 60px pour éviter les débordements */
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .fils1 .bouton {
+    margin-left: 0 !important;
+    margin-top: 30px !important;
+  }
+
+  /* Cartes et sections */
   .mere1, .mere2, .mere5 {
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .fille2, .fille3, .garcon2, .garcon3 {
-    width: 45%;
-    margin: 10px;
+    gap: 20px;
   }
 
-  /* Section large */
+  .fils2, .fille2, .garcon2 {
+    width: 45%; /* Deux cartes par ligne sur tablette */
+  }
+}
+/* ============================================================
+   TABLETTE (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  /* Section Titre principal */
+  .fils h1 {
+    font-size: 50px;
+  }
+  
+  .fils p {
+    margin: 0 auto; /* Centre le texte */
+  }
+
+  /* Suppression des marges forcées à gauche pour les listes et blocs */
+  .fille1 p, .garcon1 p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   .fille3, .garcon3 {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 30px 20px;
+  /* Cartes */
+  .mere1, .mere2 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .fille2, .garcon2 {
+    width: 40%; /* 2 cartes par ligne */
   }
 }
 
-/*  MOBILE  */
+/* ============================================================
+   MOBILE (max-width: 768px)
+   ============================================================ */
 @media (max-width: 768px) {
-  /* Header */
-  header {
-     header {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-  }
-  }
-  header img {
-    width: 60%;
-    height: auto;
+  /* Reset global pour mobile */
+  body {
+    overflow-x: hidden; /* Empêche le scroll horizontal */
   }
 
-  /* Section mere */
-  .mere {
-    width: 100%;
-    background-image: url(./pexels-max-fischer-5212345\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 20px;
+  /* Header & Nav */
+  header img {
+    width: 60px;
+    height: 60px;
   }
-  .fils {
-    padding: 30px;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
-  .fils h1 {
-    font-size: 40px;
-  }
-  .fils p {
-    max-width: 300px;
-    font-size: 12px;
-  }
-  .fils button {
-    padding: 6px 15px;
+
+  nav a {
+    margin: 0 5px;
     font-size: 14px;
   }
 
-  /* Cartes filles/garçons */
-  .mere1, .mere2, .mere5 {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-  .fille2, .fille3, .garcon2, .garcon3 {
-    width: 90%;
-    margin: 10px 0;
+  /* Section Bannière */
+  .mere {
+    height: auto;
+    padding-bottom: 40px;
   }
 
-  /* Sections large */
+  .fils {
+    padding: 40px 20px;
+  }
+
+  .fils h1 {
+    font-size: 32px;
+  }
+
+  .fils p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* Listes de changements (fille1 et garcon1) */
+  .fille1 p, .garcon1 p {
+    width: 90% !important;
+    margin: 10px auto !important; /* SUPPRIME le margin-left: 400px */
+    text-align: center;
+  }
+
+  /* Grille des étapes de vie */
+  .mere1, .mere2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fille2, .garcon2 {
+    width: 90%; /* Une carte par ligne */
+    margin: 15px 0;
+  }
+
+  /* Blocs de texte descriptifs (fille3 et garcon3) */
   .fille3, .garcon3 {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90% !important;
+    margin: 20px auto !important; /* SUPPRIME le margin-left: 250px */
+    padding: 20px;
+    text-align: center;
   }
 
   /* Footer */
   footer {
-    width: 535px;
-    padding: 20px;
+    padding: 40px 10px;
+  }
+
+  .mere5 {
+    flex-direction: column;
     text-align: center;
-    margin-left: 0;
+    gap: 30px;
   }
-  .fille1 p{
-    margin-left: 0px;
+
+  .fils5 {
+    align-items: center;
   }
-  .garcon1 p{
-    margin-left: 0px;
+
+  .fils7 {
+    font-size: 16px;
   }
 }
 
-
-
+/* Ajustement pour très petits écrans (iPhone SE, etc.) */
+@media (max-width: 400px) {
+    .fils h1 {
+        font-size: 28px;
+    }
+    .bouton {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
