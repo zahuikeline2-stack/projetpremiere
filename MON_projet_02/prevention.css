@@ -18,6 +18,18 @@ header {
   }
 }
 
+.bouton {
+  background: #4caf7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(76, 175, 122, 0.3);
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 nav a {
   margin: 0 15px;
   text-decoration: none;

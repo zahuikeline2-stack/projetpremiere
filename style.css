@@ -7,6 +7,7 @@
 body {
   background: linear-gradient(180deg, #f4f6fb, #eef2f7, #e9eff6, #f5f7fb);
   overflow-x: hidden;
+
 }
 
 header {
@@ -53,7 +54,7 @@ nav a {
   background: transparent;
 }
 .mere {
-  background-image: url(./WhatsApp\ Image\ 2026-03-15\ at\ 23.24.05.jpeg);
+background-image: url(./MON_projet_02/souce_image/Acceuil.jpeg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -107,7 +108,7 @@ nav a {
   justify-content: space-between;
   align-items: center;
   padding: 60px;
-  background-image: url(./WhatsApp\ Image\ 2026-03-17\ at\ 20.39.52.jpeg);
+background-image: url(./MON_projet_02/souce_image/Acceuil.jpeg);
   width: 100%;
   height: 500px;
   object-fit: cover;

@@ -42,8 +42,8 @@ nav a {
     font-size: 20px;
   }
  .mere{
-    background-image: url(./pexels-max-fischer-5212345\ \(1\).jpg);
-    width: 100%;
+ background-image: url(./souce_image/Conprende.jpg);
+  width: 100%;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,6 +138,7 @@ border: 1px solid white;
 }
 .mere1{
   display: flex;
+  justify-content: center;
 }
 .fille2:hover img{
   transform: scale(1.05);
@@ -230,6 +231,7 @@ color: #E6F2FF;
 }
 .mere2{
   display: flex;
+  justify-content: center;
 }
 .garcon2:hover img{
   transform: scale(1.05);
