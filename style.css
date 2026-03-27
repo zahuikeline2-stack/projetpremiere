@@ -54,7 +54,7 @@ nav a {
   background: transparent;
 }
 .mere {
-background-image: url(./MON_projet_02/souce_image/Acceuil.jpeg);
+background-image: url(./MON_projet_02/souce_image/principale.jpeg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -178,7 +178,7 @@ footer{
   }
 
   .mere {
-    background-image: url(./WhatsApp\ Image\ 2026-03-15\ at\ 23.24.05.jpeg);
+    background-image: url(./MON_projet_02/souce_image/principale.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -223,7 +223,7 @@ footer{
   .mere {
     padding: 30px 15px;
     height: 250px;
-    background-image: url(./WhatsApp\ Image\ 2026-03-15\ at\ 23.24.05.jpeg);
+    background-image: url(./MON_projet_02/souce_image/principale.jpeg);
     background-size: cover;
   }
 
@@ -355,7 +355,7 @@ header img{
     }
 
     .fils2 {
-        width: 90%; /* Les cartes prennent presque toute la largeur */
+        width: 90%; 
         margin-bottom: 15px;
     }
 
@@ -371,7 +371,7 @@ header img{
         margin-left: 0;
         text-align: center;
         width: 100%;
-        position: static; /* On remet dans le flux normal */
+        position: static;
     }
 
     /* Footer */
@@ -396,7 +396,7 @@ header img{
     
     nav {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Menu sur 2 colonnes */
+        grid-template-columns: 1fr 1fr; 
         gap: 10px;
     }
 }
