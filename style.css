@@ -289,7 +289,7 @@ header img{
         padding: 40px;
         justify-content: center;
         text-align: center;
-
+        
     }
 
     .fils1 h1 {
@@ -334,7 +334,7 @@ header img{
         height: 60vh; /* Réduit la hauteur sur mobile */
         padding: 20px;
         background-position: center;
-        background-image: url(./MON_projet_02/souce_image/Acceuil.jpeg);
+        background-image: url(/MON_projet_02/souce_image/principale.jpeg);
     }
 
     .fils1 h1 {
@@ -363,7 +363,7 @@ header img{
     .mere3 {
         height: 300px;
         background-position: center;
-        background-image: url(./MON_projet_02/souce_image/ACEUIL1.jpeg)
+        background-image: url(/MON_projet_02/souce_image/Acceuil.jpeg)
     }
 
     .fils3 h2 {
